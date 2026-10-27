@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+  --color-brand: #1D4ED8; --color-brand-dark: #1E40AF; --color-brand-soft: #E8EEFF; --color-navy: #0F1E4A; --color-cream: #F4F7FF;
+  --color-line: #D9E2F7; --color-muted: #56627F;
+}
+body { background: #fff; color: var(--color-navy); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+input, select, textarea { transition: border-color .15s, box-shadow .15s; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--color-brand); box-shadow: 0 0 0 3px rgb(29 78 216 / .18); }
+input:disabled, textarea:disabled { background: #f3efe7; cursor: not-allowed; }
+.card-hover { transition: transform .15s, box-shadow .15s; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgb(16 33 58 / .08); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
